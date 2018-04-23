@@ -1,0 +1,72 @@
+{
+  "0x3b6d518830e2687c98236cff6415dcc01ecb9bc36e493011a18b909152298e32": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0xcbea8ced61b325921edd636083de255498371f49"
+      },
+      "0x0eb5fbbc4d86693bafd5ad7397317cb3948a3688da51cb73fe932f715a7af7b2": {
+        "name": "WritingShare",
+        "address": "0xe413af095d6e922c8e756a35ee0254b18f1e892b"
+      },
+      "0xfa9dec1de918ac45fb74822a79d899ce6b10f9862adc62994453b94a46a9edf1": {
+        "name": "WritingShare",
+        "address": "0xe6a5f935802ff155ff6a2c5a1b6863df12176426"
+      },
+      "0xb0cabb2641293bc31b4583ef449fb8b9b4ecb4f84d1a1bae97f3e07a50a1cbbd": {
+        "name": "WritingShare",
+        "address": "0x0d5f7030a5656ab461b77caac440b5bc84c5b791"
+      },
+      "0x20b4d7bb8f6b90757ee849a5a90774bcc9809a7d86c97e4d921b8757bc1ec1d5": {
+        "name": "WritingShare",
+        "address": "0x9c4a086fa36fff6a69c4511945e1ace0a7f0e709"
+      },
+      "0x765bb07bfe2d5450dda31012750630b62741ec844fb360e518fffc2e14191db9": {
+        "name": "WritingShare",
+        "address": "0x180910c366b8acb9cc5778827a799957b12c8d90"
+      },
+      "0xc5cafc08dc95f6b290fa6d29c65fcb892bffdb375bfd28ef7ddad064a487cbd0": {
+        "name": "WritingShare",
+        "address": "0x5cb7749cf0e177ab341bfa72814de0c14b6dcaf5"
+      },
+      "0xecb377c9ad8929a2dcd891c0ed9675616eb1fdecf455c466692f8bb0286f6d49": {
+        "name": "WritingShare",
+        "address": "0x79d50715046436abddd2761b0b369c5a87649f08"
+      },
+      "0xdc2101734f0e10374ad27714fb2928a0eece393a6d3aae1508ed56c5664624f6": {
+        "name": "WritingShare",
+        "address": "0x92cd6ae316f6919808ab6961510fb5eb2c252fe6"
+      },
+      "0x8d8be04af2930a9907df438c345b8ac9dd07ebb83968bf7c6801ed5428593305": {
+        "name": "WritingShare",
+        "address": "0x11f8c3aac5f50e8fc136e21821989fcc96080eae"
+      }
+    },
+    "name": "development"
+  },
+  "0xbb4108513bbfd49525d9a212345a36ce17fff68fac3912ab81ac093113b650a6": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0x8a6e1c19eba57b12492845f66769ba65d8f79d8a"
+      },
+      "0x944d3b9f3d673660da99353cf250de2fa47a19913c93c95a28e172b01cd4014b": {
+        "name": "WritingShare",
+        "address": "0xb81d4108677ecc5153b10e6ebc1075408d9df37d"
+      },
+      "0x304ca166a9a5936805eb9333118253af94db90950e06ac0614f51d843d399a86": {
+        "name": "WritingShare",
+        "address": "0xaa817ecdf0f42137a3e36c0b4d5857cb3223efee"
+      },
+      "0xcc5338b9a6f5518f96a964e368a80c911bd6ab253061be73591273eb76d1423f": {
+        "name": "WritingShare",
+        "address": "0x440722e12142a7a4a5cbe711280c186e48fe6751"
+      },
+      "0x6d65999288b0b8785faeace3bee28bc193279d71c8793f6eb1c6ece50221dffa": {
+        "name": "WritingShare",
+        "address": "0x7ccba8005b1fcd0a0031ebb86a08fbf41f91ca22"
+      }
+    },
+    "name": "development"
+  }
+}
