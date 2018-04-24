@@ -117,6 +117,10 @@
       "0x498213ee4d201972b18071d527746f9c810806cf63e476aa4ba50538a2e5835f": {
         "name": "WritingShare",
         "address": "0xac4f90115f3f36c91954503b2ae9e04b0f0b6701"
+      },
+      "0x1907c6aac7e9facdb28326578ac1dd2635d045fb36fd7e839893748bdcc82b89": {
+        "name": "WritingShare",
+        "address": "0xa1064a66f753f69d71d27a96b51f0a4669e7914c"
       }
     },
     "name": "development"

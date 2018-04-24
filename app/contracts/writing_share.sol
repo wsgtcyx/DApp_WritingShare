@@ -22,8 +22,11 @@ contract WritingShare {
 	uint rewardPercentOfDrawer = 40;
 	
 	address drawerAddress;   // the address of drawer
-
-    
+	address ownerAddress;
+    modifier onlyOwner(){
+    	require(msg.sender==ownerAddress);
+    	_;
+    }
 	modifier onlyDrawer() {
 	    require(msg.sender == drawerAddress);
 	    _;
@@ -55,11 +58,16 @@ contract WritingShare {
 		mapping (uint=>address) addressCandidates;
 		mapping (uint=>string) contentCandidates;
 	}
-
+	//data structure to store all chapters
 	chapter[] private chapters;
+	//arrays to store all currentCandidateContent
+	string [] public currentCandidateContent = new string[](0);
+	//arrays to store all contents of final winner
+	string [] public allWinnerContent = new string[](0);
 
 	function WritingShare(address _drawerAddress) public{
         drawerAddress = _drawerAddress;
+        ownerAddress = msg.sender;
 	}
     
     
@@ -100,6 +108,7 @@ contract WritingShare {
 		ThisChapter.votes.push(0);
 		ThisChapter.numCandidates ++;
 		ThisChapter.totalMoney += writingCost;
+		currentCandidateContent.push(_content);
 
 	}
 	function beginVoting() public onlyDrawer onlyStage1{
@@ -133,8 +142,19 @@ contract WritingShare {
 		
 		reward();
 		
-		stage = 0;
-	    currentChapter +=1;
+		
+		if(currentChapter<chapterAmount){
+			stage = 0;
+			currentChapter +=1;
+			currentCandidateContent = new string[](0);
+
+		}
+		else{//finish all 
+			//keep stage=3
+			drawerAddress.transfer(beginCost);
+		}
+			
+
 	}
 
     function reward() internal onlyDrawer onlyStage3{
@@ -145,8 +165,7 @@ contract WritingShare {
         
         //find the index of winner
         uint indexWinner = 0;
-        for(uint i=1;i<ThisChapter.numCandidates;i++)
-        {
+        for(uint i=1;i<ThisChapter.numCandidates;i++){
             if(ThisChapter.votes[i]>ThisChapter.votes[indexWinner]){
                 indexWinner = i;
             }
@@ -158,6 +177,10 @@ contract WritingShare {
         
         uint256 moneyForDrawer = div(uint256(ThisChapter.totalMoney*rewardPercentOfDrawer),uint256(100));
         drawerAddress.transfer(moneyForDrawer);
+
+        //publish the centent
+        allWinnerContent.push(ThisChapter.contentCandidates[indexWinner]);
+
     }
       /**
     * @dev Integer division of two numbers, truncating the quotient.
@@ -178,9 +201,19 @@ contract WritingShare {
 		return stage;
 	}
 
-	function getBalance()  public view returns(uint){
+	function getBalance()  public onlyOwner view returns(uint){
 		return this.balance;
   	}
+
+  	function getCurrentCandidateContent(uint _indexCandidate) public view returns(string){
+  	    require(_indexCandidate>=0 && _indexCandidate<currentCandidateContent.length);
+  		return currentCandidateContent[_indexCandidate];
+  	}
+  	function getWinnerContent(uint _indexChapter) public view returns(string){
+  	    require(_indexChapter>=0 && _indexChapter<allWinnerContent.length);
+		return allWinnerContent[_indexChapter];
+  	}
+
   	function () payable public{
 
   	}
