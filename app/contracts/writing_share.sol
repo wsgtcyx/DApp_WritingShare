@@ -200,15 +200,15 @@ contract WritingShare {
 	function getStage() public view returns (uint) {
 		return stage;
 	}
-	function getNumCandidate() public view returns(uint){
-  		return chapters[currentChapter].numCandidates;
-  	}
 
 	function getBalance()  public onlyOwner view returns(uint){
 		return this.balance;
   	}
 
-  	function getCurrentCandidateContent(uint _indexCandidate) public view returns(string){
+  	function getNumCandidate() public view returns(uint){
+  		return chapters[currentChapter].numCandidates;
+  	}
+  	function getCurrentCandidateContent(uint _indexCandidate) public onlyStage2 view returns(string){
   	    require(_indexCandidate>=0 && _indexCandidate<currentCandidateContent.length);
   		return currentCandidateContent[_indexCandidate];
   	}
