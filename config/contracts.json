@@ -21,6 +21,7 @@
         ]
       },
       "WritingShare": {
+        "gas":2000000,
         "args": [
           100
         ]

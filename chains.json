@@ -68,5 +68,57 @@
       }
     },
     "name": "development"
+  },
+  "0x1e93aaab827a492e13556824624b533ce65be496f508b078998e646706bf208d": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0x77dad93a6933bc311dbf2cc66c6da42f9e42656c"
+      },
+      "0x6d65999288b0b8785faeace3bee28bc193279d71c8793f6eb1c6ece50221dffa": {
+        "name": "WritingShare",
+        "address": "0x29df82c515d5804273a70582c845dd208ea650cb"
+      }
+    },
+    "name": "development"
+  },
+  "0x8717cb8e32b76a3d26af876ea1f5edba8614d613b989dc1c32ea161e12f7b260": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0x682d87e6fc553ce36176013941b844ec6361d6ad"
+      },
+      "0x6d65999288b0b8785faeace3bee28bc193279d71c8793f6eb1c6ece50221dffa": {
+        "name": "WritingShare",
+        "address": "0xb032959792b9a3d91dac55b57007fc288d1e8344"
+      },
+      "0x944c2da0ead40b4eef5ad3c2d2795b799c39795ebfa165a7d3a6588357d458dd": {
+        "name": "WritingShare",
+        "address": "0x97ae9434bac607b81161b92442a848f2b795953b"
+      }
+    },
+    "name": "development"
+  },
+  "0xbf2b9a1f01a5f41d77005ee920733e3f9d916f5d88cd8efd2d78e28a0cd48368": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0x2ff8b633b3c6db1edc4a035e241c043f3eea8cef"
+      }
+    },
+    "name": "development"
+  },
+  "0xf67391f1f416ef5ad1033432af8328b8bd7c41937de2765ea565a26d55786df7": {
+    "contracts": {
+      "0xec1017a8f27731f02b162d7755f1cc2ff0121416076cde210614e98101fddf40": {
+        "name": "SimpleStorage",
+        "address": "0x69d2b5aa8badb03a39811393151e7ae037da5748"
+      },
+      "0x498213ee4d201972b18071d527746f9c810806cf63e476aa4ba50538a2e5835f": {
+        "name": "WritingShare",
+        "address": "0xac4f90115f3f36c91954503b2ae9e04b0f0b6701"
+      }
+    },
+    "name": "development"
   }
 }
