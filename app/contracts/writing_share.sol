@@ -110,6 +110,11 @@ contract WritingShare {
         ThisChapter.totalMoney += writingCost;
         currentCandidateContent.push(_content);
 
+        //safety check
+        if (now>=chapters[currentChapter].writingEnd){
+            stage2;
+        }
+
     }
     function beginVoting() public onlyDrawer onlyStage1{
         require(now>=chapters[currentChapter].writingEnd);
