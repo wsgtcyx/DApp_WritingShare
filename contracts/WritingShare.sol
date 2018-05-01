@@ -135,11 +135,11 @@ contract WritingShare {
 
       uint256 moneyForWinner = div(uint256(ThisChapter.totalMoney * rewardPercentOfCandidate),uint256(100));
       require(moneyForWinner <= this.balance);
-      /* winnerAddress.transfer(moneyForWinner); */
+      winnerAddress.send(moneyForWinner);
 
       uint256 moneyForDrawer = div(uint256(ThisChapter.totalMoney * rewardPercentOfDrawer),uint256(100));
       require(moneyForDrawer <= this.balance);
-      /* ownerAddress.transfer(moneyForDrawer); */
+      ownerAddress.send(moneyForDrawer);
 
       //publish the centent
       allWinnerContent.push(ThisChapter.contentCandidates[indexWinner]);

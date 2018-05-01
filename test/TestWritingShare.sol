@@ -68,7 +68,7 @@ contract TestWritingShare {
     meta.rewardTheWinner();
     Assert.equal(meta.getWinnerContent(0), 'chapter-0, candidate-0', 'Check winner content');
 
-    Assert.equal(meta.balance, 8 ether, 'Check init balance');  
-    Assert.equal(this.balance, 2 ether, 'Check init balance');
+    Assert.equal(meta.balance, 8 ether, 'Check balance');
+    Assert.equal(this.balance, 2 ether, 'Check balance');
   }
 }
