@@ -9,9 +9,9 @@ contract WritingShare {
     uint writingTime = 10;    // the time for candidates to write and broadcast
     uint votingTime = 10;       // the time for voting
     //varaibles about cost
-    uint beginCost = 10 ether; //the amount Drawer initially sends to the contract
-    uint writingCost = 10 ether;  //  the price for each candidate
-    uint votingCost = 10 ether;    //  the price for each voting tiket in voting stage
+    uint beginCost = 3 ether; //the amount Drawer initially sends to the contract
+    uint writingCost = 2 ether;  //  the price for each candidate
+    uint votingCost = 1 ether;    //  the price for each voting tiket in voting stage
     //varaiable about reward
     uint rewardPercentOfCandidate = 40; // represent as percentages
     uint rewardPercentOfDrawer = 40;
