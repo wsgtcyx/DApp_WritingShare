@@ -1,12 +1,11 @@
 module.exports = {
   networks: {
-     test: {
+     development: {
        host: "localhost",
        port: 8545,
        network_id: "*", // Match any network id
-       gas: 999999999999999,
-       from: '0xc1455d85e7ccde6e2668400a27ec5bfd18cf56d1'
-       // gasPrice: 100
+       // gas: 400000,
+       // from:'d0e8ff0764af46b31f7ab9114a1b517aabbef98b'
      }
    },
    mocha: {

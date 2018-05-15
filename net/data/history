@@ -1,0 +1,42 @@
+web3.eth.accounts
+web3.eth.getBlockLimit
+web3.eth.getLimit
+web3.eth.getBlock("latest").gasLimit
+web3.eth.getLimit
+web3.eth.accounts
+web3.eth.getBalance(web3.eth.coinbase).toString(10)
+web3.eth.getBalance(web3.eth.accounts[0]).toString(10)
+web3.eth.getBalance(web3.eth.accounts[0])
+web3.eth.getBalance(web3.eth.accounts[0], wei)
+web3.eth.getBalance(web3.eth.accounts[0], 'ether')
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.start()
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.setEtherbase(personal.listAccounts[0])
+miner.start(4)
+miner.getHashrate()
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.getHashrate()
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.getHashrate()
+miner,stop
+miner.stop
+miner.stop()
+miner.getHashrate()
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.stop
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]),'ether').toString(10)
+web3.eth.web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
+web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
+web3.eth.web3.fromWei(eth.getBalance(eth.accounts[0]), "ether");
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]),'ether').toString(10)
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[2]),'ether').toString(10)
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[1]),'ether').toString(10)
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)
+miner.stop
+miner.stop()
+exi
+web3.eth.accounts
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]),'ether').toString(10)

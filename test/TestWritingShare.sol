@@ -4,7 +4,7 @@ import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/WritingShare.sol";
 
-contract TestWritingShareChapter0 {
+contract TestWritingShare {
   WritingShare meta;
   uint public initialBalance = 20 ether;
 
@@ -15,7 +15,7 @@ contract TestWritingShareChapter0 {
   }
 
   /* Test Chapter0 */
-  function test_Chapter0_Balance0(){
+  function test_Chapter0_Balance(){
     Assert.equal(meta.balance, 0 ether, 'Check contact init balance');
   }
 
